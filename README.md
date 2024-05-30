@@ -1,16 +1,6 @@
-# ArcticAdmin
-[![Gem Version](https://img.shields.io/gem/v/arctic_admin.svg)](https://rubygems.org/gems/arctic_admin)
-[![Gem Downloads](https://img.shields.io/gem/dt/arctic_admin.svg)](https://rubygems.org/gems/arctic_admin)
-[![Gem Version](https://img.shields.io/npm/v/arctic_admin.svg)](https://www.npmjs.com/package/arctic_admin)
-[![Gem Downloads](https://img.shields.io/npm/dt/arctic_admin.svg)](https://www.npmjs.com/package/arctic_admin)
+# AdminTheme
 
-Simple theme for ActiveAdmin :ok_hand:
-
->**Complete demo here : https://arcticadmin.osc-fr1.scalingo.io**
->
->*admin user : admin@example.com / password*
-
-![Screenshot](doc/index.png)
+A new style spin for active admin
 
 ## Installation
 
@@ -19,7 +9,7 @@ Simple theme for ActiveAdmin :ok_hand:
 - Add this to your Gemfile:
 
 ```ruby
-gem 'arctic_admin'
+gem 'admin_theme'
 ```
 
 - Run `bundle install`.
@@ -48,7 +38,7 @@ In your `active_admin.css`, include the css file:
 
 ```css
 /*
- *= require arctic_admin/base
+ *= require admin_theme/base
  */
 ```
 
@@ -64,7 +54,7 @@ If you prefer [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html
 `active_admin.scss` file:
 
 ```scss
-@import "arctic_admin/base";
+@import "admin_theme/base";
 ```
 
 If you use the
@@ -72,7 +62,7 @@ If you use the
 add this to your `active_admin.sass` file:
 
 ```sass
-@import arctic_admin/base
+@import admin_theme/base
 ```
 
 ### 2 - JS
@@ -80,7 +70,7 @@ add this to your `active_admin.sass` file:
 In your `active_admin.js`, include the js file:
 
 ```js
-//= require arctic_admin/base
+//= require admin_theme/base
 ```
 
 :exclamation:  **Remove the line `//= require active_admin/base`**
@@ -92,7 +82,7 @@ In your `active_admin.js`, include the js file:
 In your `app/javascript/stylesheets/active_admin.scss`, add the line:
 
 ```scss
-@import '~arctic_admin/src/scss/main';
+@import '~admin_theme/src/scss/main';
 ```
 
 Remove:
@@ -104,11 +94,11 @@ Remove:
 
 ### 2 - JS
 
-Search for `app/javascript/packs/active_admin.js` in your rails project and add the following lines:  
+Search for `app/javascript/packs/active_admin.js` in your rails project and add the following lines:
 
 ```js
 import "@fortawesome/fontawesome-free/css/all.css";
-import 'arctic_admin'
+import 'admin_theme'
 ```
 
 
@@ -121,7 +111,7 @@ Right now you can change the primary color of the theme by placing the following
 ```scss
 $primary-color: #2dbb43;
 
-@import "~arctic_admin/src/scss/main";
+@import "~admin_theme/src/scss/main";
 ```
 
 If you use the
@@ -131,15 +121,7 @@ add this to your `active_admin.sass` file:
 ```sass
 $primary-color: #2dbb43
 
-@import ~arctic_admin/src/scss/main
+@import ~admin_theme/src/scss/main
 ```
 
 Then restart your webserver if it was previously running.
-
-## Contributing
-
-1. Fork it ( https://github.com/cprodhomme/arctic_admin/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request

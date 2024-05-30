@@ -1,7 +1,7 @@
-require "arctic_admin/version"
+require "admin_theme/version"
 require 'font-awesome-sass'
 
-module ArcticAdmin
+module AdminTheme
   module Rails
     class Engine < ::Rails::Engine
     end
